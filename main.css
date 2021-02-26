@@ -26,8 +26,6 @@
 
 .container1 .item.new3 {
 	align-self: start;
-	column-gap: 140%;
-	
 }
 
 .container2 {
@@ -78,11 +76,39 @@
 	grid-area: new6;
 }
 
+.container5 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+	max-width: 1200px;
+  	width: 100%;
+	margin: auto;
+	grid-row-gap: 40px;
+	grid-column-gap: 1em;
+	align-items: start;
+}
+
+.container5>* {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.container5>label {
+	white-space: nowrap;
+	width: fit-content;
+	justify-self: end;
+/*	text-align: end;*/
+	margin: 0;
+	
+}
+
 .containerMax {
 	display: grid;
+	display: none;
 	
-	height: 5000px;
+	height: 6000px;
 	width: 100%;
+	max-width: 100%;
 	
 	justify-content: center;
 	align-content: space-around;
