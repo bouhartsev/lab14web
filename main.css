@@ -104,7 +104,7 @@
 
 .containerMax {
 	display: grid;
-	display: none;
+/*	display: none;*/
 	
 	height: 6000px;
 	width: 100%;
